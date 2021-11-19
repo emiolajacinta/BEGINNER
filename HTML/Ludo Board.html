@@ -1,0 +1,187 @@
+	<!DOCTYPE html>
+<html>
+<head>
+	<title>Ludo Game</title>
+</head>
+<body>
+	<h1> LUDO GAME BOARD </h1>
+	<style type="text/css">
+		td,table { border:0.5px solid black;
+			padding: 10px;
+			border-collapse: collapse;
+		}
+	</style>
+	<!-- <table>
+		<tr>
+			<td style="background-color: green" rowspan="6" colspan="6">
+				<table style="background-color: lightgreen;padding: 45px";>
+					<tr style="background-color: green;"> 
+						<td></td>
+						<td></td>
+					</tr>
+					<tr style="background-color: green;padding: 20px">
+						<td></td>
+						<td></td>
+					</tr>
+						
+				</table>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="background-color: yellow" rowspan="6" colspan="6" >
+				<table style="background-color: gold;padding: 45px;">
+					<tr style="background-color: yellow">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr style="background-color: yellow">
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: yellow;"></td>
+			<td style="background-color: yellow;"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: yellow;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: yellow;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: yellow;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: yellow;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: green;"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="3" colspan="3" style="background-color: white;"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color: green;"></td>
+			<td style="background-color: green;"></td>
+			<td style="background-color: green;"></td>
+			<td style="background-color: green;"></td>
+			<td style="background-color: green;"></td>
+			<td style="background-color: blue;"></td>
+			<td style="background-color: blue;"></td>
+			<td style="background-color: blue;"></td>
+			<td style="background-color: blue;"></td>
+			<td style="background-color: blue;"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style="background-color: blue;"></td>
+			<td></td>
+		</tr>
+
+        <tr>
+			<td style="background-color: red" rowspan="6" colspan="6">
+				<table style="background-color:lightcoral;padding: 45px;">
+					<tr style="background-color: red">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr style="background-color: red">
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+			<td></td>
+			<td style="background-color:red"></td>
+			<td></td>
+			<td style="background-color: blue" rowspan="6" colspan="6">
+				<table style="background-color:lightblue;padding: 45px; align-self: center;">
+					<tr style="background-color: blue">
+						<td></td>
+						<td></td>
+					</tr>
+					<tr style="background-color: blue">
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color:red"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color:red"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td style="background-color:red"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td style="background-color:red"></td>
+			<td style="background-color:red"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+
+res.json({status:true})
+test endpoint
+	</table> -->
+
+	<button onclick="fetchData()" style="background-color: green; border: none;padding: 15px; margin-top: 10px; color: white; border-radius: 10px;">CLICK ME</button>
+   
+	<script>
+       function fetchData(){
+		   fetch('http://localhost:4000/test',{
+			   method:"POST"
+		   })
+		   .then(response=>response.json())
+	    	.then(data=>console.log(data))
+	}
+	</script>
+
+</body>
+</html>
